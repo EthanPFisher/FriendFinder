@@ -30,8 +30,4 @@ module.exports = function (app) {
     // push to api
     friendsData.push(req.body);
   });
-
-  app.post("/api/clear", function (req, res) {
-    friendsData.length = [];
-  });
 };
